@@ -1,0 +1,8 @@
+{
+    "name": "darrieumerlou",
+    "require-dev": {
+        "phpunit/phpunit":"5.3.*",
+        "phpunit/dbunit":"dev-master"
+    }
+}
+

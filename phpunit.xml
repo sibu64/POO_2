@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="phpunit.xsd"
+         backupGlobals="false"
+         colors="true">
+    <testsuites>
+        <testsuite name="POO_2">
+            <directory>Test</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <blacklist>
+            <directory suffix=".php">vendor</directory>
+        </blacklist>
+    </filter>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">/Applications/MAMP/htdocs/POO_2/</directory>
+            <file>/Applications/MAMP/htdocs/POO_2/Blog1.php/</file>
+        </whitelist>
+    </filter>
+    
+    <php>
+        <var name="DB_DSN" value="mysql:dbname=poo;host=localhost" />
+        <var name="DB_USER" value="root" />
+        <var name="DB_PASSWD" value="root" />
+        <var name="DB_DBNAME" value="poo" />
+    </php>
+
+  
+</phpunit>
+
+
+
